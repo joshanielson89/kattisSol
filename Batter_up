@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main()
+{
+	int a;
+	std::cin >> a;
+	int total = 0;
+	int denom = 0;
+	for(int i = 0; i < a; i++){
+		int b;
+		std::cin >> b;
+		if ( b != -1){
+			total += b;
+			denom ++;
+		}
+	}
+	float batAVG = (float)total/denom;
+	std::cout << batAVG;
+	return 0;
+}
